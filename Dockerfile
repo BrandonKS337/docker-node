@@ -7,7 +7,7 @@ COPY . .
 EXPOSE 8080
 # exposes chosen internal ports, in our case 8080
 RUN npm install
-# tells program to install this before use
+# tells program to install this before use, aka what dependencies do users need to run the app
 
 CMD ["npm", "start"]
 # how app knows what to run to start
